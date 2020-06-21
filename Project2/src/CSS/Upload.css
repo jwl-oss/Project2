@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div.sticky{
+    position: sticky;
+}
+a.Account{
+    text-align: right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.Account {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    float:right;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .Account {
+    background-color: #3e8e41;
+}
+/*导航栏*/
+.content{
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px #000;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+table tr td{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+table thead tr,table tbody tr{
+    height: 35px;
+    line-height: 35px;
+}
+table tr th:first-child,table tr td:first-child {/*设置table左边边框*/
+    border-left: 2px solid #eaeaea;
+}
+table tr th:last-child,table tr td:last-child {/*设置table右边边框*/
+    border-right: 2px solid #eaeaea;
+}
+table tr td:first-child,
+table tr td:nth-child(2),
+table tr td:nth-child(3),
+table tr td:last-child{/*设置table表格每列底部边框*/
+    border-bottom: 2px solid #eaeaea;
+}
+table tr th {
+    background: #eaeaea;
+}
+table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}/*四周方框边角圆润化*/
+/*边框css*/
+
+table tr td form{
+    padding: 10px 20px;
+}
+table tr td form button{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #4CAF50;
+    color: white;
+    border-radius: 10px;
+}
+button:hover{
+    background: #3e8e41;
+}
